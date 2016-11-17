@@ -1,3 +1,14 @@
+/* VARIABLES, MIXINS
+-------------------------------------------------- */
+  /* Mixins */
+@mixin box_sizing {
+  -moz-box-sizing:    border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing:         border-box;
+}
+
+  /* Variables */
+
 /* GLOBAL STYLES
 -------------------------------------------------- */
 body {
@@ -21,4 +32,14 @@ footer p {
 -------------------------------------------------- */
 .navbar {
   margin-bottom: 0;
+}
+
+/* MISCELLANEUS
+-------------------------------------------------- */
+.debug_dump {
+  clear: both;
+  float: left;
+  width: 100%;
+  margin-top: 45px;
+  @include box_sizing;
 }
