@@ -1,14 +1,6 @@
-<h1>Register</h1>
+<%= provide(:title,  "Sign up") %>
+<%= provide(:submit, "Sign up") %>
 
-<div class="row">
-  <%= form_for @user do |f| %>
-  
-    <%= f.label :name %>
-    <%= f.text_field :name, class: "form-control" %>
-    
-    <%= f.label :email %>
-    <%= f.email_field :email, class: "form-control" %>
-    
-    <%= f.submit %>
-  <% end %>
-</div>
+<h3>Sign up</h3>
+
+<%= render 'shared/form' %>
